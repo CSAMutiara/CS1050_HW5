@@ -6,6 +6,18 @@
 </file>
 <file name="/home/ubuntu/workspace/ex5/terminal/src/main/java/aup/cs/terminal/ExitCommand.java">
 </file>
+<file name="/home/ubuntu/workspace/ex5/terminal/src/main/java/aup/cs/terminal/RmFCommand.java">
+</file>
 <file name="/home/ubuntu/workspace/ex5/terminal/src/main/java/aup/cs/terminal/Terminal.java">
+</file>
+<file name="/home/ubuntu/workspace/ex5/terminal/src/main/java/aup/cs/terminal/TerminalArgumentParsingException.java">
+</file>
+<file name="/home/ubuntu/workspace/ex5/terminal/src/main/java/aup/cs/terminal/TerminalCommandParsingException.java">
+</file>
+<file name="/home/ubuntu/workspace/ex5/terminal/src/main/java/aup/cs/terminal/TerminalExecutionException.java">
+</file>
+<file name="/home/ubuntu/workspace/ex5/terminal/src/main/java/aup/cs/terminal/TerminalFlagParsingException.java">
+</file>
+<file name="/home/ubuntu/workspace/ex5/terminal/src/main/java/aup/cs/terminal/TerminalParsingException.java">
 </file>
 </checkstyle>

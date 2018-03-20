@@ -24,6 +24,8 @@ public final class Terminal {
                 f = com.exec();
             } catch (IOException e) {
                 System.out.println("Oop");
+            } catch (TerminalArgumentParsingException e) {
+                System.out.println("Oop");
             }
         }
     }
@@ -31,10 +33,10 @@ public final class Terminal {
     /**
      * getCommand scans and returns the command user typed into command line.
      */
-    public Command getCommand(File f) {
+    public Command getCommand(File f) throws TerminalArgumentParsingException {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
-        String[] words = input.split(",");
+        String[] words = input.split(" ");
         if (input.equals("exit")) {
             return new ExitCommand();
         } else if (words[0].equals("cd")) {
@@ -42,8 +44,13 @@ public final class Terminal {
                 throw new TerminalArgumentParsingException("Change Directory requires an argument");
             }
             return new CdCommand(f, words[1]);
+        } else if (words[0].equals("rm") && words[1].equals("f")) {
+            if (words.length != 3) {
+                throw new TerminalArgumentParsingException("Remove File From"
+                + "Current Directory requires an argument");
+            }
         }
-        return null; //later returns input
+        return new Command(); //later returns input
     }
     
     /**

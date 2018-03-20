@@ -11,8 +11,8 @@ import java.util.Scanner;
 
 public class TerminalParsingException extends Exception {
     
-    public TerminalParsingException() {
-        super();
+    public TerminalParsingException(String message) {
+        super(message);
     }
     
 }

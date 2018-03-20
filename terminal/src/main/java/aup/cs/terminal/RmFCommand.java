@@ -1,28 +1,29 @@
 package aup.cs.terminal;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * CdCommand class.
+ * RmFCommand class.
  */
 
-public final class CdCommand extends Command {
+public final class RmFCommand extends Command {
     
-    protected String child;
+    protected File removable;
     
-    public CdCommand(File f, String c) {
-        super(f);
-        this.child = child;
+    public RmFCommand(File removable) {
+        super();
+        this.removable = removable;
     }
     
     /**
      * exec method executes an action.
      */
     public File exec() {
-        file = new File(file, child);
+        file.delete();
         return file;
     }
     
