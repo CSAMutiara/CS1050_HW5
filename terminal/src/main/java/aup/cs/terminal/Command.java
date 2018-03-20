@@ -1,31 +1,31 @@
 package aup.cs.terminal;
 
 import java.io.File;
-import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 /**
- * Command class.
+ * Command super-class.
  */
 
 public class Command {
     
-    protected File f;
+    protected File file;
     
     public Command() {
-        this.f = new File(".");
+        this.file = new File(".");
     }
     
     public Command(File f) {
-        this.f = f;
+        this.file = file;
     }
     
     /**
      * exec method executes an action.
      */
     public File exec() {
-        return this.f;
+        return this.file;
     }
     
 }

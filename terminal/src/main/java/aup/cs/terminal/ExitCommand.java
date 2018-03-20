@@ -1,15 +1,15 @@
 package aup.cs.terminal;
 
 import java.io.File;
-import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 /**
- * Command class.
+ * ExitCommand class.
  */
 
-public final class ExitCommand extends Command{
+public final class ExitCommand extends Command {
     
     public ExitCommand() {
         super();
@@ -24,7 +24,7 @@ public final class ExitCommand extends Command{
      */
     public File exec() {
         System.exit(00);
-        return this.f;
+        return this.file;
     }
     
 }

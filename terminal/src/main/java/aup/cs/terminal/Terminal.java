@@ -2,9 +2,9 @@ package aup.cs.terminal;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * Terminal class: home file.
@@ -34,8 +34,14 @@ public final class Terminal {
     public Command getCommand(File f) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
+        String[] words = input.split(",");
         if (input.equals("exit")) {
             return new ExitCommand();
+        } else if (words[0].equals("cd")) {
+            if (words.length != 2) {
+                throw new TerminalArgumentParsingException("Change Directory requires an argument");
+            }
+            return new CdCommand(f, words[1]);
         }
         return null; //later returns input
     }

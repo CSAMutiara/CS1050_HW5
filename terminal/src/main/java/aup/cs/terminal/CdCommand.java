@@ -1,30 +1,29 @@
 package aup.cs.terminal;
 
 import java.io.File;
-import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 /**
- * Command class.
+ * CdCommand class.
  */
 
-public final class CDCommand extends Command{
+public final class CdCommand extends Command {
     
-    public CDCommand() {
-        super();
-    }
+    String child;
     
-    public CDCommand(File f) {
+    public CdCommand(File f, String c) {
         super(f);
+        this.child = child;
     }
     
     /**
      * exec method executes an action.
      */
     public File exec() {
-        System.exit(00);
-        return this.f;
+        file = new File(file, child);
+        return file;
     }
     
 }
