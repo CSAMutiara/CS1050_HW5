@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.7">
+<file name="/home/ubuntu/workspace/ex4/shop/src/main/java/aup/cs/Brush.java">
+</file>
+<file name="/home/ubuntu/workspace/ex4/shop/src/main/java/aup/cs/CosmeticProduct.java">
+</file>
+<file name="/home/ubuntu/workspace/ex4/shop/src/main/java/aup/cs/Cream.java">
+</file>
+<file name="/home/ubuntu/workspace/ex4/shop/src/main/java/aup/cs/Foundation.java">
+</file>
+<file name="/home/ubuntu/workspace/ex4/shop/src/main/java/aup/cs/Lipstick.java">
+</file>
+<file name="/home/ubuntu/workspace/ex4/shop/src/main/java/aup/cs/Mascara.java">
+</file>
+<file name="/home/ubuntu/workspace/ex4/shop/src/main/java/aup/cs/PostShave.java">
+</file>
+<file name="/home/ubuntu/workspace/ex4/shop/src/main/java/aup/cs/PreShave.java">
+</file>
+<file name="/home/ubuntu/workspace/ex4/shop/src/main/java/aup/cs/Product.java">
+</file>
+<file name="/home/ubuntu/workspace/ex4/shop/src/main/java/aup/cs/ProductList.java">
+</file>
+<file name="/home/ubuntu/workspace/ex4/shop/src/main/java/aup/cs/Razor.java">
+</file>
+<file name="/home/ubuntu/workspace/ex4/shop/src/main/java/aup/cs/Shave.java">
+</file>
+<file name="/home/ubuntu/workspace/ex4/shop/src/main/java/aup/cs/ShavingProduct.java">
+</file>
+<file name="/home/ubuntu/workspace/ex4/shop/src/main/java/aup/cs/Shop.java">
+</file>
+<file name="/home/ubuntu/workspace/ex4/shop/src/main/java/aup/cs/Soap.java">
+</file>
+</checkstyle>
