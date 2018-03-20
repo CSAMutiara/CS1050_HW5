@@ -6,7 +6,7 @@ apply plugin: 'java'
 apply plugin: 'application'
 apply plugin: 'checkstyle'
 
-mainClassName = 'aup.cs.shop.Shop'
+mainClassName = 'aup.cs.terminal.Terminal'
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
