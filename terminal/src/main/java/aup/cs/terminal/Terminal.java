@@ -1,6 +1,7 @@
 package aup.cs.terminal;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -49,6 +50,13 @@ public final class Terminal {
                 throw new TerminalArgumentParsingException("Remove File From"
                 + "Current Directory requires an argument");
             }
+            return new RmFCommand(f);
+        } else if (words[0].equals("cat") && words[1].equals("f")) {
+            if (words.length != 3) {
+                throw new TerminalArgumentParsingException("Print Contents of "
+                + "File requires an argument");
+            }
+            return new CatFCommand(f);
         }
         return new Command(); //later returns input
     }

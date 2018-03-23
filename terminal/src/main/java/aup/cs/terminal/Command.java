@@ -1,6 +1,8 @@
 package aup.cs.terminal;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -24,7 +26,7 @@ public class Command {
     /**
      * exec method executes an action.
      */
-    public File exec() {
+    public File exec() throws FileNotFoundException {
         return this.file;
     }
     
