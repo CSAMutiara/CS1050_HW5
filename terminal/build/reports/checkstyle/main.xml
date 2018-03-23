@@ -9,9 +9,11 @@
 <file name="/home/ubuntu/workspace/ex5/terminal/src/main/java/aup/cs/terminal/ExitCommand.java">
 </file>
 <file name="/home/ubuntu/workspace/ex5/terminal/src/main/java/aup/cs/terminal/MkdirDCommand.java">
-<error line="17" column="22" severity="warning" message="Member name &apos;d&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
 </file>
 <file name="/home/ubuntu/workspace/ex5/terminal/src/main/java/aup/cs/terminal/RmFCommand.java">
+</file>
+<file name="/home/ubuntu/workspace/ex5/terminal/src/main/java/aup/cs/terminal/RmRCommand.java">
+<error line="11" severity="warning" message="Empty line should be followed by &lt;p&gt; tag on the next line." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocParagraphCheck"/>
 </file>
 <file name="/home/ubuntu/workspace/ex5/terminal/src/main/java/aup/cs/terminal/Terminal.java">
 </file>

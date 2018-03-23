@@ -21,7 +21,7 @@ public final class CdCommand extends Command {
     /**
      * exec method executes an action.
      */
-    public File exec() {
+    public File exec() throws TerminalExecutionException {
         file = new File(file, child);
         return file;
     }

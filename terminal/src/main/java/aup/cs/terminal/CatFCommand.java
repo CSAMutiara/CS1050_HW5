@@ -23,18 +23,18 @@ public final class CatFCommand extends Command {
     /**
      * exec method executes an action.
      */
-    public File exec() {
+    public File exec() throws TerminalExecutionException {
         try  {
             Scanner sc = new Scanner(printable);
             String input = sc.nextLine();
             while (sc.hasNextLine()) {
                 System.out.println(input);
             }
+            return file;
         } catch (FileNotFoundException e) {
-            System.out.println("Print Contents of File cannot find file "
+            throw new TerminalExecutionException("Print Contents of File cannot find file "
                 + "argument. Please try again with existing file");
         }
-        return file;
     }
     
 }

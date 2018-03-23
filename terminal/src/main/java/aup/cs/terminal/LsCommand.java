@@ -8,25 +8,30 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * MkdirDCommand class.
+ * 
+ * LsCommand class.
  */
 
-public final class MkdirDCommand extends Command {
+public final class LsCommand extends Command {
     
-    protected File newDir;
-    protected String name;
+    protected File[] files;
     
-    public MkdirDCommand(File f, String name) {
+    public LsCommand(File f) {
         super(f);
-        this.name = name;
+        this.files = deletable.listFiles();
     }
     
     /**
      * exec method executes an action.
      */
     public File exec() throws TerminalExecutionException {
-        newDir = new File(name);
-        newDir.mkdir();
+        
+        if (files != null) {
+            for (File f: files) {
+                f.delete();
+            }
+        }
+        deletable.delete();
         return file;
     }
     

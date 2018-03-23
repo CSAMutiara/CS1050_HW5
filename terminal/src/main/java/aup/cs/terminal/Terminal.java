@@ -24,9 +24,11 @@ public final class Terminal {
                 Command com = getCommand(f);
                 f = com.exec();
             } catch (IOException e) {
-                System.out.println("Oop");
+                System.out.println(e.getMessage());
+            } catch (TerminalExecutionException e) {
+                System.out.println(e.getMessage());
             } catch (TerminalArgumentParsingException e) {
-                System.out.println("Oop");
+                System.out.println(e.getMessage());
             }
         }
     }
@@ -57,6 +59,12 @@ public final class Terminal {
                 + "File requires an argument");
             }
             return new CatFCommand(f);
+        } else if (words[0].equals("mkdir")) {
+            if (words.length != 2) {
+                throw new TerminalArgumentParsingException("Print Contents of "
+                + "File requires an argument");
+            }
+            return new MkdirDCommand(f, words[1]);
         }
         return new Command(); //later returns input
     }

@@ -22,7 +22,7 @@ public final class ExitCommand extends Command {
     /**
      * exec method executes an action.
      */
-    public File exec() {
+    public File exec() throws TerminalExecutionException {
         System.exit(00);
         return this.file;
     }

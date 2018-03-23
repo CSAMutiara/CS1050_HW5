@@ -26,7 +26,7 @@ public class Command {
     /**
      * exec method executes an action.
      */
-    public File exec() throws FileNotFoundException {
+    public File exec() throws TerminalExecutionException {
         return this.file;
     }
     

@@ -22,7 +22,7 @@ public final class RmFCommand extends Command {
     /**
      * exec method executes an action.
      */
-    public File exec() {
+    public File exec() throws TerminalExecutionException {
         file.delete();
         return file;
     }
