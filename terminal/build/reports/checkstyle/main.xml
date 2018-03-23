@@ -8,12 +8,16 @@
 </file>
 <file name="/home/ubuntu/workspace/ex5/terminal/src/main/java/aup/cs/terminal/ExitCommand.java">
 </file>
+<file name="/home/ubuntu/workspace/ex5/terminal/src/main/java/aup/cs/terminal/LsCommand.java">
+<error line="11" severity="warning" message="Empty line should be followed by &lt;p&gt; tag on the next line." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocParagraphCheck"/>
+</file>
 <file name="/home/ubuntu/workspace/ex5/terminal/src/main/java/aup/cs/terminal/MkdirDCommand.java">
 </file>
 <file name="/home/ubuntu/workspace/ex5/terminal/src/main/java/aup/cs/terminal/RmFCommand.java">
 </file>
 <file name="/home/ubuntu/workspace/ex5/terminal/src/main/java/aup/cs/terminal/RmRCommand.java">
 <error line="11" severity="warning" message="Empty line should be followed by &lt;p&gt; tag on the next line." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocParagraphCheck"/>
+<error line="20" column="5" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
 </file>
 <file name="/home/ubuntu/workspace/ex5/terminal/src/main/java/aup/cs/terminal/Terminal.java">
 </file>

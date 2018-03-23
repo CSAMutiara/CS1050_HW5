@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="aup.cs.HelloWorldTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-03-23T10:53:16" hostname="amutiara-cs1050-5834073" time="0.004">
+<testsuite name="aup.cs.HelloWorldTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-03-23T11:42:03" hostname="amutiara-cs1050-5834073" time="0.005">
   <properties/>
-  <testcase name="testSomething" classname="aup.cs.HelloWorldTest" time="0.004"/>
+  <testcase name="testSomething" classname="aup.cs.HelloWorldTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
